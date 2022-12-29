@@ -27,17 +27,23 @@ There are several approaches to this, the first one is the easiest one:
 - This will ask some questions in chinese:
 - The first one asks about the *version*
 - Then asks for the protocol, *TCP* works usually fine
-- Now you choose the *port*
+- Now you choose the *port* (remember your port choice)
 - Then it asks if you want to install *Ad Blocker*, you can say NO
 - Next it asks if you want to install *Shadow Socks*, you can say NO
 - And finally you should press *Enter* to finish installation
 
-3. ### Check if the configuration is happy ready:
+3. ### Open up your firewall:
 
-- run `v2ray qr`. This should show to you the configurartion link
-- run `v2ray log` to see the connection logs:
+- Install ufw: `apt install ufw`
+- Open up typical ports: `ufw allow http`, `ufw allow https`, `ufw allow ssh`
+- Open up VMESS port you chose before: `ufw allow <the number above>`
+- run: `ufw enable`
 
-4. ### Install v2ray client on your devices:
+4. ### Check if the configuration is happy ready:
+
+- run `v2ray url`. This should show to you the configurartion link.
+
+5. ### Install v2ray client on your devices:
 
 v2ray apps for Android:
 - v2RayNG
