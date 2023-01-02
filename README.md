@@ -9,6 +9,8 @@ There are several approaches to this, the first one is the easiest one:
 
 - I personally use http://ovh.com
 - Go for buying **Virtual Private Server**
+
+![Buy VPS](/buy_vps.jpeg "Buy VPS")
 - The first two cheap options would work
 - Choose the **Distribution Only** image
 - Go for **Ubuntu**
