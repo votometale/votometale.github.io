@@ -108,15 +108,13 @@ Install **V2rayNG**.
 
 - Open the app, click on the **three dots** button on top right.
 
-![Import](/14.jpeg "Import")
+![ImportAndroid](/17.jpeg "ImportAndroid")
 
-- Select the newly added link:
+- Select the second option, to import the copied config:
 
-![Select the setting](/15.jpeg "Select the setting")
+![Select the setting](/18.jpeg "Select the setting")
 
-- And finally on the **Home** tab, press the **connect(play)** button.
-
-![Connect](/16.jpeg "Connect")
+- And finally press the **connect(play)** button.
 
 
 8. ### You should see the logs on the server ;)
