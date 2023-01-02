@@ -30,54 +30,79 @@ To connect to your server you need a SSH client:
 
 - Make a SSH connection to your server
 
-![SSH Connection](/2.jpeg "SSH Connection")
+![SSH Connection](/3.jpeg "SSH Connection")
 
 - Run the following commands: `sudo apt-get update`, `sudo apt-get upgrade`
 - Run the following command to start v2ray script `bash <(curl -s -L https://git.io/v2ray.sh)` 
 
-![Run v2ray script](/3.jpeg "Run v2ray script")
+![Run v2ray script](/4.jpeg "Run v2ray script")
 
 - This will ask some questions in chinese language:
 - The first one asks about the *version* of the v2ray you like:
 
-![Choose version](/4.jpeg "Choose version")
+![Choose version](/5.jpeg "Choose version")
 
 - Then it asks for the protocol you would like to use, *TCP* works fine:
 
-![Choose protocol](/5.jpeg "Choose protocol")
+![Choose protocol](/6.jpeg "Choose protocol")
 
 - Now you choose the *port* (remember your port choice)
 - Then it asks if you want to install *Ad Blocker*, you can say NO
 - Next it asks if you want to install *Shadow Socks*, you can say NO
 
-![Finall questions](/6.jpeg "Final Questions")
+![Finall questions](/7.jpeg "Final Questions")
 
 - And finally it asks you to confirm the settings once more. You should press *Enter* to finish installation.
 
-![Confirmation](/7.jpeg "Confirmation")
+![Confirmation](/8.jpeg "Confirmation")
+
+- Then it outputs once more the settings. Specifically you need the port:
+
+![Output](/9.jpeg "Output")
 
 3. ### Open up your firewall:
 
 - Install ufw: `apt install ufw`
-- Open up typical ports: `ufw allow http`, `ufw allow https`, `ufw allow ssh`
+- Open up common ports: `ufw allow http`, `ufw allow https`, `ufw allow ssh`
 - Open up VMESS port you chose before: `ufw allow <the number above>`
-- run: `ufw enable`
+
+![Ports](/10.jpeg "Ports")
+
+- Finally enable the firewall: `ufw enable`
 
 4. ### Check if the configuration is happy ready:
 
 - run `v2ray url`. This should show to you the configurartion link.
 
-5. ### Install v2ray client on your devices:
+![URL](/11.jpeg "URL")
 
-v2ray apps for Android:
-- v2RayNG
-- Kitsunebi
-- BifrostV
-- V2Ray
+5. ### Run logging process on your server:
+
+- Run the `v2ray log` command, and you will see the v2ray logs live. For the moment since nobody is connected to your server, there won't be any logs.
+
+6. ### Share the URL of step 4 with your friends so that they can use it to connect to your server.
+
+7. ### Install v2ray client on your devices:
+
+Copy the shared link:
+
+![Copy link](/13.jpeg "Copy link")
+
+## IOS:
+Install **NapsternetV**.
+
+- Open the app, and on the **Configs** tab click on the **+** button on top right.
+
+![Import](/14.jpeg "Import")
+
+- Select the newly added link:
+
+![Select the setting](/15.jpeg "Select the setting")
+
+- And finally on the **Home** tab, press the **connect(play)** button.
+
+![Connect](/15.jpeg "Connect")
 
 
-v2ray apps for iOS:
-- ShadowRocket
-- Kitsunebi – supports UDP relay
-- Quantumult
-- i2Ray
+
+8. ### You should see the logs on the server ;)
