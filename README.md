@@ -101,8 +101,22 @@ Install **NapsternetV**.
 
 - And finally on the **Home** tab, press the **connect(play)** button.
 
-![Connect](/15.jpeg "Connect")
+![Connect](/16.jpeg "Connect")
 
+## Android:
+Install **V2rayNG**.
+
+- Open the app, click on the **three dots** button on top right.
+
+![Import](/14.jpeg "Import")
+
+- Select the newly added link:
+
+![Select the setting](/15.jpeg "Select the setting")
+
+- And finally on the **Home** tab, press the **connect(play)** button.
+
+![Connect](/16.jpeg "Connect")
 
 
 8. ### You should see the logs on the server ;)
